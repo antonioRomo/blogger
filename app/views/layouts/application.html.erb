@@ -11,6 +11,29 @@
   <p class="flash">
     <%= flash.notice %>
   </p>
+
+  <header class="navbar  navbar-inverse">
+    <div id="container">
+      <div id="content">
+
+
+        <ul id="linklist">
+          <li><%= link_to "Home", articles_path %></li>
+          <li><%= link_to "Articles", articles_path %></li>
+          <li><%= link_to "Tags", tags_path %></li>
+          <% if logged_in? %>
+            <%= link_to "(logout)", logout_path %>
+          <% else %>
+            <%= link_to "(login)", login_path %>
+          <% end %>          
+        </ul>
+
+
+      </div>
+    </div>
+  </header>
+
+
   <div id="container">
     <div id="content">
       <%= yield %>

@@ -34,3 +34,21 @@ a {
   clear: both;
   padding-top: 20px;
 }
+
+
+#linklist {
+  font: {
+    family: Verdana, Helvetica, Arial;
+    size: 20px;
+      }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+
+}
+#linklist li {
+  display: inline;
+  text-decoration: none;
+
+  }
